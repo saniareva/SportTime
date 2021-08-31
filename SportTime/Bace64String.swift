@@ -31,3 +31,10 @@ class Bace64String {
         }
     
 }
+
+extension Bace64String {
+    func a () {
+        let newInformation = 1
+    }
+    
+}
