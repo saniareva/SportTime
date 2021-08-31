@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20E232" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES">
+        <attribute name="descriptionEx" optional="YES" attributeType="String"/>
+        <attribute name="img" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="timeExercise" optional="YES" attributeType="String"/>
+        <attribute name="timeRelax" optional="YES" attributeType="String"/>
+        <relationship name="listExercises" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ListExercises" inverseName="exercise" inverseEntity="ListExercises"/>
+    </entity>
+    <entity name="ListExercises" representedClassName="ListExercises" syncable="YES">
+        <attribute name="countExercises" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="exercise" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="listExercises" inverseEntity="Exercise"/>
+    </entity>
+    <elements>
+        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="ListExercises" positionX="-374.379150390625" positionY="-18.37448120117188" width="128" height="88"/>
+    </elements>
+</model>
